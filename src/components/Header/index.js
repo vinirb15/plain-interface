@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <header>
-            <h2>Wellcome, <b>Lisa Price</b></h2>
+            <h2>Welcome, <b>Lisa Price</b></h2>
 
 
             <div  className="icons">

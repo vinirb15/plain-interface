@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { FiEdit, FiExternalLink, FiHome } from 'react-icons/fi';
+import { FiExternalLink, FiHome } from 'react-icons/fi';
 
 import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -31,7 +31,7 @@ function HomePage() {
             </div>
             <SideNav style={{
                 backgroundColor: '#9557a9',
-                height: '100%',
+                height: '170vh',
             }}>
                 <SideNav.Toggle onClick={() => sideBar()} />
                 <SideNav.Nav defaultSelected="home">

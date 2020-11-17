@@ -99,6 +99,9 @@
         font-size: 25%;
     }
     .box-content {
-        width: 55%;
+        width: 100%;
+    }
+    .utils {
+        width: 100%;
     }
 }

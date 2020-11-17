@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { FiLogIn, FiEdit, FiBarChart, FiMonitor } from 'react-icons/fi';
+import { FiEdit, FiBarChart, FiMonitor } from 'react-icons/fi';
 
 import './styles.css'
 

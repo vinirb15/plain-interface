@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { FiEdit, FiExternalLink, FiHome } from 'react-icons/fi';
+
 import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
@@ -25,16 +27,17 @@ function HomePage() {
                     padding: '15px 20px 0 20px'
                 }}
             >
-                <Content />
+                <Content className="content" />
             </div>
             <SideNav style={{
-                    backgroundColor: '#9557a9'
-                }}>
+                backgroundColor: '#9557a9',
+                height: '100%',
+            }}>
                 <SideNav.Toggle onClick={() => sideBar()} />
                 <SideNav.Nav defaultSelected="home">
                     <NavItem eventKey="home">
                         <NavIcon>
-                            <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                            <FiHome />
                         </NavIcon>
                         <NavText>
                             Home
@@ -42,20 +45,35 @@ function HomePage() {
                     </NavItem>
                     <NavItem eventKey="charts">
                         <NavIcon>
-                            <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+                            <FiExternalLink />
                         </NavIcon>
                         <NavText>
-                            Charts
+                            Links
             </NavText>
                         <NavItem eventKey="charts/linechart">
                             <NavText>
-                                Line Chart
-                </NavText>
+                                HR
+                     </NavText>
                         </NavItem>
                         <NavItem eventKey="charts/barchart">
                             <NavText>
-                                Bar Chart
-                </NavText>
+                                Parts & Service
+                     </NavText>
+                        </NavItem>
+                        <NavItem eventKey="charts/barchart">
+                            <NavText>
+                                Merch
+                     </NavText>
+                        </NavItem>
+                        <NavItem eventKey="charts/barchart">
+                            <NavText>
+                                Marketing
+                     </NavText>
+                        </NavItem>
+                        <NavItem eventKey="charts/barchart">
+                            <NavText>
+                                Cord Systems
+                     </NavText>
                         </NavItem>
                     </NavItem>
                 </SideNav.Nav>

@@ -1,0 +1,85 @@
+.iframe-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 31%;
+    max-height: 40rem;
+    background-color: white;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+.iframe-content h1 {
+    margin-left: 1rem;
+    color: #701a8c;
+    font-size: 4rem;
+}
+
+.socialPage {
+    max-width: 34rem;
+    max-height: 50rem;
+}
+
+
+@media (max-width: 880px) {
+    .socialPage {
+        max-width: 30rem;
+        max-height: 50rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .iframe-content h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem!important;
+    }
+    .socialPage {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+    html {
+        font-size: 20%;
+    }
+}
+
+@media (max-width: 630px) {
+    .iframe-content h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem!important;
+    }
+}
+
+@media (max-width: 560px) {
+    .second img {
+        width: 18rem;
+        transition: .6s;
+        border-radius: 35px;
+    }
+    .socialPage {
+        max-width: 15rem;
+        max-height: 20rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .second img {
+        width: 10rem;
+        transition: .6s;
+        border-radius: 35px;
+    }
+    .socialPage {
+        max-width: 10rem;
+        max-height: 20rem;
+    }
+    html {
+        font-size: 20%;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .iframe-content{
+        display: none;
+    }
+}

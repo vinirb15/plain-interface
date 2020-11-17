@@ -27,7 +27,9 @@ function HomePage() {
             >
                 <Content />
             </div>
-            <SideNav>
+            <SideNav style={{
+                    backgroundColor: '#9557a9'
+                }}>
                 <SideNav.Toggle onClick={() => sideBar()} />
                 <SideNav.Nav defaultSelected="home">
                     <NavItem eventKey="home">

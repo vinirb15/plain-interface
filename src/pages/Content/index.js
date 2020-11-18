@@ -1,23 +1,16 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import Company from '../../components/Company';
-import DoubleImages from '../../components/Dobleimg';
+import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 
 import Zendesk from '../../assets/Zendesk.png';
 import PowerBI from '../../assets/PowerBI.png';
 import Displays from '../../assets/Displays.png';
+import KnowledgeBase from '../../assets/Knowledge.png';
 
 import './styles.css';
 
 export default function Content() {
-
-  const history = useHistory()
-
-  function pageTeste() {
-    history.push('/')
-  }
 
   return (
     <div>
@@ -26,11 +19,11 @@ export default function Content() {
 
       <div className="HomeContent">
 
-        <div className="box-content first">
+        <div className="box-content images">
           <Link to="/">
-            <img src={PowerBI} alt="prod4" />
+            <img src={PowerBI} alt="PowerBI" />
             <h2>
-              Log In to
+              Log In to FEG
           </h2>
             <h1>
               Power BI
@@ -38,43 +31,59 @@ export default function Content() {
           </Link>
         </div>
 
-        <div className="box-content first">
+        <div className="box-content images">
           <Link to="/">
-            <img src={Displays} alt="prod4" />
+            <img src={Displays} alt="ERP" />
             <h2>
-              Log In to
+              Log In to FEG
           </h2>
             <h1>
-              Power BI
+              ERP
           </h1>
           </Link>
         </div>
 
-        <div className="box-content first">
+        <div className="box-content images">
           <Link to="/">
-            <img src={Zendesk} alt="prod4" />
+            <img src={Zendesk} alt="Zendesk" />
             <h2>
-              Log In to
+              Log In to FEG
           </h2>
             <h1>
-              Power BI
+              Zendesk Management
           </h1>
           </Link>
         </div>
-        {/* 2 area */}
 
-        <DoubleImages />
-
-        <div className="utils">
-          <h1>Useful links by department</h1>
-          <button onClick={pageTeste} className="button">HR</button>
-          <button onClick={pageTeste} className="button">Parts & Service</button>
-          <button onClick={pageTeste} className="button">Merch</button>
-          <button onClick={pageTeste} className="button">Marketing</button>
-          <button onClick={pageTeste} className="button">Cord Systems</button>
+        <div className="box-content images">
+          <Link to="/">
+            <img src={KnowledgeBase} alt="Knowledge Base" />
+            <h2>
+              Log In to FEG
+          </h2>
+            <h1>
+              Knowledge Base
+          </h1>
+          </Link>
         </div>
 
-        <Company />
+        <div className="box-content images">
+          <Link to="/">
+            <img src={KnowledgeBase} alt="Create Ticket" />
+            <h2>
+              To FEG
+          </h2>
+            <h1>
+              Create Your Ticket
+          </h1>
+          </Link>
+        </div>
+
+        <div className="company">
+          <Link to="/">
+            <h1>Company Announcements</h1>
+          </Link>
+        </div>
 
       </div>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { FiExternalLink, FiHome } from 'react-icons/fi';
+import { FiHome, FiExternalLink } from 'react-icons/fi';
 
 import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -24,14 +24,14 @@ function HomePage() {
             <div
                 style={{
                     marginLeft: expanded ? 240 : 64,
-                    padding: '15px 20px 0 20px'
+                    padding: '15px 20px 0 20px',
                 }}
             >
                 <Content className="content" />
             </div>
             <SideNav style={{
                 backgroundColor: '#9557a9',
-                height: '170vh',
+                height: '100%!important',
             }}>
                 <SideNav.Toggle onClick={() => sideBar()} />
                 <SideNav.Nav defaultSelected="home">
@@ -41,40 +41,39 @@ function HomePage() {
                         </NavIcon>
                         <NavText>
                             Home
-            </NavText>
+                        </NavText>
                     </NavItem>
-                    <NavItem eventKey="charts">
+                    <NavItem eventKey="">
                         <NavIcon>
                             <FiExternalLink />
                         </NavIcon>
                         <NavText>
-                            Links
-            </NavText>
-                        <NavItem eventKey="charts/linechart">
-                            <NavText>
-                                HR
-                     </NavText>
-                        </NavItem>
-                        <NavItem eventKey="charts/barchart">
-                            <NavText>
-                                Parts & Service
-                     </NavText>
-                        </NavItem>
-                        <NavItem eventKey="charts/barchart">
-                            <NavText>
-                                Merch
-                     </NavText>
-                        </NavItem>
-                        <NavItem eventKey="charts/barchart">
-                            <NavText>
-                                Marketing
-                     </NavText>
-                        </NavItem>
-                        <NavItem eventKey="charts/barchart">
-                            <NavText>
-                                Cord Systems
-                     </NavText>
-                        </NavItem>
+                            Power BI
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="">
+                        <NavIcon>
+                            <FiExternalLink />
+                        </NavIcon>
+                        <NavText>
+                            Zendesk Management
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="">
+                        <NavIcon>
+                            <FiExternalLink />
+                        </NavIcon>
+                        <NavText>
+                            Knowledge Base
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="">
+                        <NavIcon>
+                            <FiExternalLink />
+                        </NavIcon>
+                        <NavText>
+                            Create Your Ticket
+                        </NavText>
                     </NavItem>
                 </SideNav.Nav>
             </SideNav>

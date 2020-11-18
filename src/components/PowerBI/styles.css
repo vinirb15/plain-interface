@@ -67,6 +67,7 @@
 @media (max-width: 660px) {
     .box-content {
         width: 47%;
+        margin: .5rem;
     }
 }
 

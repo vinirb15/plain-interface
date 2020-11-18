@@ -45,7 +45,7 @@
     }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 280px) {
     .company{
         display: none;
     }

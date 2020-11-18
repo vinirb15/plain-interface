@@ -1,12 +1,3 @@
-.HomeContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
-    max-height: 100vh;
-}
-
 .images img {
     width: 100%;
     transition: .6s;
@@ -73,14 +64,18 @@
     }
 }
 
+@media (max-width: 660px) {
+    .box-content {
+        width: 47%;
+    }
+}
+
 @media (max-width: 470px) {
     html {
         font-size: 25%;
     }
     .box-content {
-        width: 40%;
-    }
-    .utils {
-        width: 100%;
+        width: 46%;
+        max-height: 100rem;
     }
 }

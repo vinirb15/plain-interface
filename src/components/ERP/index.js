@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Displays from '../../assets/Displays.png';
 
-import './styles.css';
+import '../PowerBI/styles.css';
 
 export default function Content() {
 

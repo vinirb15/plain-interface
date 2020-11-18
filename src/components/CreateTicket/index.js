@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import KnowledgeBase from '../../assets/Knowledge.png';
+import CreateTicket from '../../assets/CreateTicket.png';
 
-import './styles.css';
+import '../PowerBI/styles.css';
 
 export default function Content() {
 
   return (
     <div className="box-content images">
       <Link to="/">
-        <img src={KnowledgeBase} alt="Create Ticket" />
+        <img src={CreateTicket} alt="Create Ticket" />
         <h2>
-          To FEG
+          FEG Ticket
           </h2>
         <h1>
           Create Your Ticket

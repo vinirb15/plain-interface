@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import KnowledgeBase from '../../assets/Knowledge.png';
 
-import './styles.css';
+import '../PowerBI/styles.css';
 
 export default function Content() {
 

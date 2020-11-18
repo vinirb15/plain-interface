@@ -31,7 +31,7 @@ function HomePage() {
             </div>
             <SideNav style={{
                 backgroundColor: '#9557a9',
-                height: '100%!important',
+                height: expanded ? ('150vh') : ('100%'),
             }}>
                 <SideNav.Toggle onClick={() => sideBar()} />
                 <SideNav.Nav defaultSelected="home">

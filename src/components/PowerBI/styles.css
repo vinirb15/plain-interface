@@ -67,6 +67,7 @@
 @media (max-width: 660px) {
     .box-content {
         max-height: 60rem;
+        margin: 0.2rem;
     }
 }
 

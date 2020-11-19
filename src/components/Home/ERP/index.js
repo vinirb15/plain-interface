@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Displays from '../../../assets/Displays.png';
 
@@ -9,15 +8,15 @@ export default function Content() {
 
   return (
     <div className="box-content images">
-      <Link to="/">
+      <a href="http://system.fegllc.com/">
         <img src={Displays} alt="ERP" />
         <h2>
-          Log In to FEG
+          Log In to
           </h2>
         <h1>
-          ERP
+        FEG ERP
           </h1>
-      </Link>
+      </a>
     </div>
   );
 }

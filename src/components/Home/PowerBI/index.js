@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import PowerBI from '../../../assets/PowerBI.png';
 
@@ -9,15 +8,15 @@ export default function Content() {
 
   return (
     <div className="box-content images">
-      <Link to="/">
+      <a href="https://app.powerbi.com/?noSignUpCheck=1">
         <img src={PowerBI} alt="PowerBI" />
         <h2>
-          Log In to FEG
+          Log In to
           </h2>
         <h1>
-          Power BI
+        FEG Power BI
           </h1>
-      </Link>
+      </a>
     </div>
   );
 }

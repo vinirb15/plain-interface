@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6rem;
+    gap: 3rem 2rem;
     max-height: 100vh;
     margin-left: 4%;
     margin-right: 4%;

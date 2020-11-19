@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import KnowledgeBase from '../../../assets/Knowledge.png';
 
@@ -9,7 +8,7 @@ export default function Content() {
 
   return (
 <div className="box-content images">
-          <Link to="/">
+          <a href="https://fegllc.zendesk.com/hc/en-us">
             <img src={KnowledgeBase} alt="Knowledge Base" />
             <h2>
               Log In to FEG
@@ -17,7 +16,7 @@ export default function Content() {
             <h1>
               Knowledge Base
           </h1>
-          </Link>
+          </a>
         </div>
   );
 }

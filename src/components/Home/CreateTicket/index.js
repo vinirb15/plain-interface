@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import CreateTicket from '../../../assets/CreateTicket.png';
 
@@ -9,7 +8,7 @@ export default function Content() {
 
   return (
     <div className="box-content images">
-      <Link to="/">
+      <a href="https://fegllc.zendesk.com/hc/en-us/requests/new">
         <img src={CreateTicket} alt="Create Ticket" />
         <h2>
           FEG Ticket
@@ -17,7 +16,7 @@ export default function Content() {
         <h1>
           Create Your Ticket
           </h1>
-      </Link>
+      </a>
     </div>
   );
 }

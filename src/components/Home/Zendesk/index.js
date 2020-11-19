@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Zendesk from '../../../assets/Zendesk.png';
 
@@ -9,15 +8,15 @@ export default function Content() {
 
   return (
     <div className="box-content images">
-      <Link to="/">
+      <a href="https://fegllc.zendesk.com/agent//">
         <img src={Zendesk} alt="Zendesk" />
         <h2>
-          Log In to FEG
+          Log In to
           </h2>
         <h1>
-          Zendesk Management
+        FEG Zendesk Management
           </h1>
-      </Link>
+      </a>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import KnowledgeBase from '../../assets/Knowledge.png';
+import KnowledgeBase from '../../../assets/Knowledge.png';
 
 import '../PowerBI/styles.css';
 

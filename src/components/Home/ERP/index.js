@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import PowerBI from '../../assets/PowerBI.png';
+import Displays from '../../../assets/Displays.png';
 
-import './styles.css';
+import '../PowerBI/styles.css';
 
 export default function Content() {
 
   return (
     <div className="box-content images">
       <Link to="/">
-        <img src={PowerBI} alt="PowerBI" />
+        <img src={Displays} alt="ERP" />
         <h2>
           Log In to FEG
           </h2>
         <h1>
-          Power BI
+          ERP
           </h1>
       </Link>
     </div>

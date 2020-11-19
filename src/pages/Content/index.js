@@ -3,12 +3,12 @@ import React from 'react';
 import './styles.css';
 
 import Header from '../../components/Header';
-import Power from '../../components/PowerBI';
-import Display from '../../components/ERP';
-import ZendeskManager from '../../components/Zendesk';
-import Knowledge from '../../components/Knowledge';
-import CreateTicket from '../../components/CreateTicket';
-import CompanyAnnoun from '../../components/CompanyAnnoun';
+import Power from '../../components/Home/PowerBI';
+import Display from '../../components/Home/ERP';
+import ZendeskManager from '../../components/Home/Zendesk';
+import Knowledge from '../../components/Home/Knowledge';
+import CreateTicket from '../../components/Home/CreateTicket';
+import CompanyAnnoun from '../../components/Home/CompanyAnnoun';
 
 export default function Content() {
 

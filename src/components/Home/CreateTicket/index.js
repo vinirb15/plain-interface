@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Zendesk from '../../assets/Zendesk.png';
+import CreateTicket from '../../../assets/CreateTicket.png';
 
 import '../PowerBI/styles.css';
 
@@ -10,12 +10,12 @@ export default function Content() {
   return (
     <div className="box-content images">
       <Link to="/">
-        <img src={Zendesk} alt="Zendesk" />
+        <img src={CreateTicket} alt="Create Ticket" />
         <h2>
-          Log In to FEG
+          FEG Ticket
           </h2>
         <h1>
-          Zendesk Management
+          Create Your Ticket
           </h1>
       </Link>
     </div>

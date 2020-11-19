@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiHome, FiExternalLink, FiList, FiFolderPlus } from 'react-icons/fi';
+import { FiHome, FiList } from 'react-icons/fi';
 
 import './styles.css';
 
@@ -11,14 +11,7 @@ export default function SideBar() {
         <div class="sidebar">
             <img src={Monograma} alt="FEG LOGO" />
             <Link className="active"><FiHome size={15} /></Link>
-            <Link><FiList size={15} /></Link>
-            <Link><FiFolderPlus size={15} /></Link>
-            <Link><FiExternalLink size={15} /></Link>
-            <Link><FiExternalLink size={15} /></Link>
-            <Link><FiExternalLink size={15} /></Link>
-            <Link><FiExternalLink size={15} /></Link>
-            <Link><FiExternalLink size={15} /></Link>
-            <Link><FiExternalLink size={15} /></Link>
+            <Link title="Company Announcements"><FiList size={15} /></Link>
         </div>
     )
 }

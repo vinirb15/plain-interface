@@ -3,7 +3,9 @@ import { FiUser } from 'react-icons/fi';
 
 import './styles.css';
 
-export default function () {
+import ProfileInfo from './ProfileInfo';
+
+export default function LoginButton() {
 
     function openNav() {
         document.getElementById("LogNav").style.width = "20%";
@@ -17,7 +19,8 @@ export default function () {
         <>
             <div id="LogNav" className="sidenav">
                 <a href="#" className="closebtn" onClick={closeNav}>&times;</a>
-                <h1 href="#">User Profile</h1>
+                <h2>User Profile</h2>
+                <ProfileInfo />
             </div>
 
 

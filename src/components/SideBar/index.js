@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiHome, FiExternalLink, FiBox, FiList, FiFolderPlus } from 'react-icons/fi';
+import { FiHome, FiExternalLink, FiList, FiFolderPlus } from 'react-icons/fi';
 
 import './styles.css';
 

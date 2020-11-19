@@ -4,6 +4,8 @@ import { FiEdit, FiBarChart, FiMonitor } from 'react-icons/fi';
 
 import './styles.css'
 
+import SearchBox from '../SearchBox';
+
 export default function Header() {
 
     const history = useHistory();
@@ -20,9 +22,7 @@ export default function Header() {
 
 
             <div  className="icons">
-                <input
-                placeholder="Search"
-                />
+                <SearchBox />
 
                 <button onClick={handlePage} type="button">
                     <FiEdit size={18} color="#9557a9" />

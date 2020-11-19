@@ -13,7 +13,7 @@ import CompanyAnnoun from '../../components/CompanyAnnoun';
 export default function Content() {
 
   return (
-    <div>
+    <div className="full">
 
       <Header />
 

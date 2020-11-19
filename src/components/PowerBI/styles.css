@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 31%;
+    width: 25%;
     max-height: 40rem;
     background-color: white;
     padding: 2%;
@@ -66,8 +66,7 @@
 
 @media (max-width: 660px) {
     .box-content {
-        width: 47%;
-        margin: .5rem;
+        max-height: 60rem;
     }
 }
 

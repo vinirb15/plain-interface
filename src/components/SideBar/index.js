@@ -10,8 +10,8 @@ export default function SideBar() {
     return (
         <div class="sidebar">
             <img src={Monograma} alt="FEG LOGO" />
-            <Link className="active"><FiHome size={15} /></Link>
-            <Link title="Company Announcements"><FiList size={15} /></Link>
+            <Link className="active"><FiHome size={20} /></Link>
+            <Link title="Company Announcements"><FiList size={20} /></Link>
         </div>
     )
 }

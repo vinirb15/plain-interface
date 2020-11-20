@@ -8,16 +8,24 @@
   background-color: #FFFFFF;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 25px;
 }
 
 .sidenav a {
   text-decoration: none;
 }
 
+.sidenav h1 {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  color: black;
+  font-weight: 500;
+}
+
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
   right: -30px;
   font-size: 36px;
   margin-right: 50px;

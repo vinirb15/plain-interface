@@ -21,14 +21,14 @@ export default function Header() {
   }
 
   const icon = <button onClick={changeState} type="button">
-    <FiSearch size={18} color="#7F43F5" />
+    <FiSearch size={25} color="#7F43F5" />
   </button>
 
   const onSearch = (
     <>
       <input type="text" name="search" placeholder="Search.." />
       <button onClick={changeState} type="button">
-        <FiSearch size={18} color="#7F43F5" />
+        <FiSearch size={25} color="#7F43F5" />
       </button>
     </>
   )

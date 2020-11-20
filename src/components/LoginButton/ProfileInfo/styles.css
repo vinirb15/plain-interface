@@ -1,4 +1,106 @@
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
 .profile-box img {
     width: 35%;
     box-sizing: border-box;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: .5rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #7F43F5;
+    font-weight: 900;
+    margin: 0;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.about p {
+    color: #808080;
+    font-size: 1.3rem;
+    margin-left: .5rem;
+}
+
+.about button {
+    height: 2.6rem;
+    width: 55%;
+    border-radius: 4px;
+    border: 0px;
+    background: #deeff9;
+    color: #478fc8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.2s;
+    margin: 0.7rem 0;
+}
+
+.about button:hover {
+    opacity: 0.7;
+}
+
+.profile-box hr {
+    width: 80%;
+    margin-top: 2rem!important;
+    margin: 0 2rem;
+    border-top: 1px dashed #c8c8d3;
+}
+
+.my-profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.my-profile .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.my-profile button {
+    height: 1.8rem;
+    width: 20%;
+    border-radius: 4px;
+    border: 0px;
+    background: #fddde2;
+    color: #f24960;
+    font-size: .9rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.my-profile .container h3 {
+    font-weight: 450;
+}
+
+.my-profile .container h4 {
+    color: #c8c8d3;
+}
+
+.update-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

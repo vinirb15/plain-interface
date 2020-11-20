@@ -18,14 +18,14 @@ export default function LoginButton() {
     return (
         <>
             <div id="LogNav" className="sidenav">
-                <a href="#" className="closebtn" onClick={closeNav}>&times;</a>
-                <h2>User Profile</h2>
+                <a href="/#" className="closebtn" onClick={closeNav}>&times;</a>
+                <h1>User Profile</h1>
                 <ProfileInfo />
             </div>
 
 
             <button onClick={openNav} type="button">
-                <FiUser size={18} color="#7F43F5" />
+                <FiUser size={25} color="#7F43F5" />
             </button>
         </>
 

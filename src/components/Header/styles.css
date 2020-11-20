@@ -4,17 +4,17 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: 5rem!important;
+    height: 5rem;
     border-radius: 4px;
     padding-left: 3rem;
     padding-right: 12rem;
-    margin-bottom: 2rem!important;
+    margin-bottom: 2rem;
     background-color: white;
 }
 
 header h2 {
-    font-size: 2rem!important;
-    margin-left: 2.4rem!important;
+    font-size: 2rem;
+    margin-left: 2.4rem;
     color: #7F43F5;
     font-weight: normal;
 }
@@ -29,10 +29,10 @@ header b {
 }
 
 .icons button {
-    height: 20px!important;
-    width: 20px!important;
+    height: 27px;
+    width: 25px;
     border-radius: 4px;
-    border: 1px solid #dcdce6;
+    border: 0px solid #dcdce6;
     background: transparent;
     margin-left: 16px;
     transition: border-color 0.2s;
@@ -40,30 +40,4 @@ header b {
 
 .icons button:hover {
     border-color: #999;
-}
-
-.icons input {
-    height: 32px;
-    color: #333;
-    border: 1px solid #dcdce6;
-    border-radius: 8px;
-    padding: 0 20px!important;
-}
-
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 100%;
 }

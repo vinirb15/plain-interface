@@ -27,11 +27,11 @@ export default function Header() {
                 <SearchBox />
 
                 <button onClick={handlePage} type="button">
-                    <FiEdit size={18} color="#7F43F5" />
+                    <FiEdit size={25} color="#7F43F5" />
                 </button>
 
                 <button onClick={handlePage} type="button">
-                    <FiBarChart size={18} color="#7F43F5" />
+                    <FiBarChart size={25} color="#7F43F5" />
                 </button>
 
                 <LoginButton />

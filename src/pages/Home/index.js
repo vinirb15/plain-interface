@@ -10,9 +10,6 @@ import Knowledge from '../../components/Home/Knowledge';
 import CreateTicket from '../../components/Home/CreateTicket';
 import CompanyAnnoun from '../../components/Home/CompanyAnnoun';
 
-
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
-
 import SideBar from '../../components/SideBar';
 
 

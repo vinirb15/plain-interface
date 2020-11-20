@@ -1,0 +1,59 @@
+.requests-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 6%;
+}
+
+.requests-container h2 {
+    font-size: 2rem;
+    color: #7F43F5;
+    font-weight: 900;
+    margin: 2rem 0;
+}
+
+.requests-container button {
+    height: 4rem;
+    width: 15%;
+    border-radius: 10px;
+    border: 0px;
+    background: #25ab9f;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 0.2s;
+    margin: 0.7rem 0;
+}
+
+.requests-container .content button {
+    height: 2.6rem;
+    width: 10%;
+    border-radius: 20px;
+    border: 0px;
+    background: #25ab9f;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.2s;
+    margin: 0.7rem 2rem;
+}
+
+
+.content h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 20%;
+    margin: 2rem 0;
+    border-radius: 10px;
+    border: 0px;
+    background: #7F43F5;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content ul {
+    list-style: none;
+}

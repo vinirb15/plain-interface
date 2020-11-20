@@ -10,8 +10,8 @@ export default function SideBar(props) {
     return (
         <div class="sidebar">
             <img src={Monograma} alt="FEG LOGO" />
-            <Link className={props.home} title="Home"><FiHome size={20} /></Link>
-            <Link className={props.company} title="Company Announcements"><FiList size={20} /></Link>
+            <Link  to="/" className={props.home} title="Home"><FiHome size={20} /></Link>
+            <Link to="/user" className={props.company} title="Company Announcements"><FiList size={20} /></Link>
         </div>
     )
 }

@@ -1,19 +1,48 @@
 import React from 'react';
 
+import './styles.css';
+
+import Header from '../../components/Header';
+import Power from '../../components/Home/PowerBI';
+import Display from '../../components/Home/ERP';
+import ZendeskManager from '../../components/Home/Zendesk';
+import Knowledge from '../../components/Home/Knowledge';
+import CreateTicket from '../../components/Home/CreateTicket';
+import CompanyAnnoun from '../../components/Home/CompanyAnnoun';
+
+
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
-import Content from '../Content';
 import SideBar from '../../components/SideBar';
 
-function HomePage() {
 
+export default function HomePage() {
 
     return (
-    <>
-        <SideBar />
-        <Content />
-    </>
-    )
-}
+        <>
+            <SideBar home="active"/>
 
-export default HomePage;
+            <div className="full">
+
+                <Header />
+
+                <div className="HomeContent">
+
+                    <Power />
+
+                    <Display />
+
+                    <ZendeskManager />
+
+                    <Knowledge />
+
+                    <CreateTicket />
+
+                    <CompanyAnnoun />
+
+                </div>
+
+            </div >
+        </>
+    );
+}

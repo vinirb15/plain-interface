@@ -18,7 +18,7 @@ export default function LoginButton() {
     return (
         <>
             <div id="LogNav" className="sidenav">
-                <a href="/#" className="closebtn" onClick={closeNav}>&times;</a>
+                <a href="#/" className="closebtn" onClick={closeNav}>&times;</a>
                 <h1>User Profile</h1>
                 <ProfileInfo />
             </div>

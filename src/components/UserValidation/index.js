@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { FiUser, FiUserPlus }from 'react-icons/fi'
+import { FiUser, FiUserPlus } from 'react-icons/fi'
 
 import axios from 'axios';
 
@@ -31,8 +31,8 @@ export default function Register() {
     return (
         <div className="requests-container">
             <div>
-                <button><FiUserPlus/> New Member</button>
-                <h2>You have (requests.length) new account requests</h2>
+                <button><FiUserPlus /> New Member</button>
+                <h2>You have <b>06</b> new account requests</h2>
             </div>
 
             <div className="content">

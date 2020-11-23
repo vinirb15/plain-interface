@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { 
+    // useState, 
+    useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FiUser, FiUserPlus } from 'react-icons/fi'
 
-import axios from 'axios';
+// import axios from 'axios';
 
 import './styles.css';
 
 const Register = () => {
-    const [requests, setRequests] = useState();
+    // const [requests, setRequests] = useState();
 
     const history = useHistory();
 
@@ -15,12 +17,12 @@ const Register = () => {
         // loadRequests()
     }, []);
 
-    async function loadRequests() {
-        await axios.get('/user').then(response => {
-            setRequests(response.data);
-            console.log(requests)
-        })
-    }
+    // async function loadRequests() {
+    //     await axios.get('/user').then(response => {
+    //         setRequests(response.data);
+    //         console.log(requests)
+    //     })
+    // }
 
     function handleValidate() {
         localStorage.clear();
@@ -28,10 +30,17 @@ const Register = () => {
         history.push(`/`);
     }
 
+    
+    function newMember() {
+        localStorage.clear();
+
+        history.push(`/user/profile/`);
+    }
+
     return (
         <div className="requests-container">
             <div>
-                <button><FiUserPlus /> New Member</button>
+                <button onClick={newMember}><FiUserPlus /> New Member</button>
                 <h2>You have <b>06</b> new account requests</h2>
             </div>
 

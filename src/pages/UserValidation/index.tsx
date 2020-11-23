@@ -4,7 +4,7 @@ import User from '../../components/UserValidation';
 import SideBar from '../../components/SideBar';
 import Header from '../../components/Header';
 
-const HomePage: React.FC = () => {
+const UserValidation: React.FC = () => {
 
 
     return (
@@ -16,4 +16,4 @@ const HomePage: React.FC = () => {
     )
 }
 
-export default HomePage;
+export default UserValidation;

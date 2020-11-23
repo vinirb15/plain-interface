@@ -26,7 +26,7 @@ const Header = () => {
 
   const onSearch = (
     <>
-      <input type="text" name="search" placeholder="Search.." />
+      <input className="input" type="text" name="search" placeholder="Search.." />
       <button onClick={changeState} type="button">
         <FiSearch size={25} color="#7F43F5" />
       </button>

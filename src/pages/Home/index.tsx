@@ -2,6 +2,8 @@ import React from 'react';
 
 import './styles.css';
 
+import { Grid } from '@material-ui/core'
+
 import Header from '../../components/Header';
 import Power from '../../components/Home/PowerBI';
 import Display from '../../components/Home/ERP';
@@ -17,26 +19,38 @@ const HomePage: React.FC = () => {
 
     return (
         <>
-            <SideBar home="active"/>
+            <SideBar home="active" />
 
             <div className="full">
 
                 <Header />
 
                 <div className="HomeContent">
+                    <Grid container spacing={3}>
+                        <Grid item xs={4}>
+                            <Power />
+                        </Grid>
 
-                    <Power />
+                        <Grid item xs={4}>
+                            <Display />
+                        </Grid>
 
-                    <Display />
+                        <Grid item xs={4}>
+                            <ZendeskManager />
+                        </Grid>
 
-                    <ZendeskManager />
+                        <Grid item xs={4}>
+                            <Knowledge />
+                        </Grid>
 
-                    <Knowledge />
+                        <Grid item xs={4}>
+                            <CreateTicket />
+                        </Grid>
 
-                    <CreateTicket />
-
-                    <CompanyAnnoun />
-
+                        <Grid item xs={4}>
+                            <CompanyAnnoun />
+                        </Grid>
+                    </Grid>
                 </div>
 
             </div >

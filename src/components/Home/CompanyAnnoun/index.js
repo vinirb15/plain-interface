@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-const Content = () => {
+export default function Content() {
 
     return (
         <div className="company">
@@ -13,5 +13,3 @@ const Content = () => {
         </div>
     );
 }
-
-export default Content;

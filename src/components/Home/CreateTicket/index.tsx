@@ -4,7 +4,7 @@ import CreateTicket from '../../../assets/CreateTicket.png';
 
 import '../PowerBI/styles.css';
 
-export default function Content() {
+const Content = () => {
 
   return (
     <div className="box-content images">
@@ -20,3 +20,5 @@ export default function Content() {
     </div>
   );
 }
+
+export default Content;

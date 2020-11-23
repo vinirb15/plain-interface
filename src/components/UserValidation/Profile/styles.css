@@ -1,0 +1,58 @@
+.user-validation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+}
+
+.user-validation img {
+    width: 15%;
+    box-sizing: border-box;
+}
+
+.description{
+    margin-top: 2em;
+    align-items: center;
+}
+
+.description h2{
+    font-weight: normal;
+}
+
+.description h2 + h2{
+    margin-top: 3rem;
+}
+
+.description b{
+    text-align: left;
+    background-color: #ffffff;
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.actions button {
+    height: 3rem;
+    width: 15%;
+    border-radius: 20px;
+    border: 0px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: 0.2s;
+    margin: 0.7rem 0;
+}
+
+.actions button:hover {
+    opacity: .6;
+}
+
+.actions button + button {
+    margin-left: 1rem;
+}

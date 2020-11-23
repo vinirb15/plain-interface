@@ -4,16 +4,16 @@ import User from '../../components/UserValidation';
 import SideBar from '../../components/SideBar';
 import Header from '../../components/Header';
 
-function HomePage() {
+const UserValidation: React.FC = () => {
 
 
     return (
         <>
-            <SideBar company="active" />
+            <SideBar validate="active" />
             <Header />
             <User />
         </>
     )
 }
 
-export default HomePage;
+export default UserValidation;

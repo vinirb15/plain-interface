@@ -1,24 +1,22 @@
 import React from 'react';
 
-import Displays from '../../../assets/Displays.png';
+import Zendesk from '../../../assets/Zendesk.png';
 
 import '../PowerBI/styles.css';
 
-const Content = () => {
+export default function Content() {
 
   return (
     <div className="box-content images">
-      <a href="http://system.fegllc.com/">
-        <img src={Displays} alt="ERP" />
+      <a href="https://fegllc.zendesk.com/agent//">
+        <img src={Zendesk} alt="Zendesk" />
         <h2>
           Log In to
           </h2>
         <h1>
-        FEG ERP
+        FEG Zendesk Management
           </h1>
       </a>
     </div>
   );
 }
-
-export default Content;

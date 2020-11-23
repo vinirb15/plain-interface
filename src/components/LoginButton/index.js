@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FiUser } from 'react-icons/fi';
 
 import './styles.css';
 
 import ProfileInfo from './ProfileInfo';
 
-const LoginButton = () => {
-
-const [ extended, setExtended ] = useState(false);
+export default function LoginButton() {
 
     function openNav() {
-       setExtended(true);
+        document.getElementById("LogNav").style.width = "20%";
     }
 
     function closeNav() {
-        setExtended(false);
+        document.getElementById("LogNav").style.width = "0";
     }
 
     return (
         <>
-            <div id="LogNav" className="sidenav" style={{ width: extended ? '20%' : '0'}}>
+            <div id="LogNav" className="sidenav">
                 <a href="#/" className="closebtn" onClick={closeNav}>&times;</a>
                 <h1>User Profile</h1>
                 <ProfileInfo />
@@ -35,5 +33,3 @@ const [ extended, setExtended ] = useState(false);
 
 
 }
-
-export default LoginButton;

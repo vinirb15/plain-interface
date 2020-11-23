@@ -5,7 +5,7 @@ import './styles.css';
 
 import Monograma from '../../../assets/Monograma.png';
 
-const ProfileInfo = () => {
+export default function ProfileInfo() {
 
     return (
         <div className="profile-box">
@@ -39,6 +39,6 @@ const ProfileInfo = () => {
         </div>
 
     )
-}
 
-export default ProfileInfo;
+
+}

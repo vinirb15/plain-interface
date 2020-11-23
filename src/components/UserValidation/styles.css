@@ -12,13 +12,6 @@
     margin: 2rem 0;
 }
 
-.requests-container h2 b {
-    padding: .5rem .7rem;
-    background: #7F43F5;
-    border-radius: 10px;
-    color: #fff;
-}
-
 .requests-container button {
     height: 4rem;
     width: 15%;

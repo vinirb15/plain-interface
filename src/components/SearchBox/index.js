@@ -3,7 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 
 import './styles.css'
 
-const Header = () => {
+export default function Header() {
   const [search, setSearch] = useState(false);
   const [actived, setActived] = useState('');
 
@@ -26,7 +26,7 @@ const Header = () => {
 
   const onSearch = (
     <>
-      <input className="input" type="text" name="search" placeholder="Search.." />
+      <input type="text" name="search" placeholder="Search.." />
       <button onClick={changeState} type="button">
         <FiSearch size={25} color="#7F43F5" />
       </button>
@@ -38,5 +38,3 @@ const Header = () => {
     (search ? onSearch : icon)
   )
 }
-
-export default Header;

@@ -4,7 +4,7 @@ import PowerBI from '../../../assets/PowerBI.png';
 
 import './styles.css';
 
-const Content = () => {
+export default function Content() {
 
   return (
     <div className="box-content images">
@@ -20,5 +20,3 @@ const Content = () => {
     </div>
   );
 }
-
-export default Content;

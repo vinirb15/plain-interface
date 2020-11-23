@@ -2,22 +2,52 @@ import React, { useState } from 'react';
 
 import './styles.css';
 
+import Company from './Company';
+import Local from './Local';
+
+
 const Announcements: React.FC = () => {
-const [ content, setContent ] = useState('');
 
-    const company = (
-        <div className="company-announcements">
-            <h1>company-announcements</h1>
-        </div>
-    )
-    const local = (
-        <div className="company-announcements">
-            <h1>company-announcements</h1>
-        </div>
-    )
+    const [btn, setBtn] = useState([
+        {
+            content: true,
+            btnCompany: '#7F43F5',
+            btnLocal: '',
+        },
+    ]);
 
-    return(
-        ()
+    function companyContent() {
+        setBtn([
+            {
+                content: true,
+                btnCompany: '#7F43F5',
+                btnLocal: '',
+            }
+        ]);
+    }
+
+    function localContent() {
+        setBtn([
+            {
+                content: false,
+                btnCompany: '',
+                btnLocal: '#7F43F5',
+            }
+        ]);
+    }
+
+    return (
+        <div className="announcements">
+            <div className="announcements-sidebar">
+                <button style={{ color: btn[0].btnCompany }} onClick={companyContent}>Company Announcements</button>
+                <button style={{ color: btn[0].btnLocal }} onClick={localContent}>Local Announcements</button>
+            </div>
+            <div className="announcements-content">
+                {
+                    (btn[0].content ? <Company /> : <Local />)
+                }
+            </div>
+        </div>
     )
 }
 

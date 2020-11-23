@@ -1,3 +1,23 @@
-.company-announcements {
+.announcements {
+    display: grid;
+    grid-template-columns: 18% auto;
     margin-left: 6%;
+}
+
+.announcements-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.announcements-sidebar button {
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 0;
+}
+
+.announcements-sidebar button + button {
+    margin-top: 1rem;
 }

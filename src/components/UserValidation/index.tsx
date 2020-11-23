@@ -6,7 +6,7 @@ import axios from 'axios';
 
 import './styles.css';
 
-export default function Register() {
+const Register = () => {
     const [requests, setRequests] = useState();
 
     const history = useHistory();
@@ -73,3 +73,5 @@ export default function Register() {
         </div>
     );
 }
+
+export default Register;

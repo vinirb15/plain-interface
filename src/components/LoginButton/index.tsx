@@ -5,14 +5,14 @@ import './styles.css';
 
 import ProfileInfo from './ProfileInfo';
 
-export default function LoginButton() {
+const LoginButton = () => {
 
     function openNav() {
-        document.getElementById("LogNav").style.width = "20%";
+       // document.getElementById("LogNav").style.width = "20%";
     }
 
     function closeNav() {
-        document.getElementById("LogNav").style.width = "0";
+       // document.getElementById("LogNav").style.width = "0";
     }
 
     return (
@@ -33,3 +33,5 @@ export default function LoginButton() {
 
 
 }
+
+export default LoginButton;

@@ -4,7 +4,7 @@ import User from '../../components/UserValidation';
 import SideBar from '../../components/SideBar';
 import Header from '../../components/Header';
 
-function HomePage() {
+const HomePage: React.FC = () => {
 
 
     return (

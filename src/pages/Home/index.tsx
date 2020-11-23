@@ -13,7 +13,7 @@ import CompanyAnnoun from '../../components/Home/CompanyAnnoun';
 import SideBar from '../../components/SideBar';
 
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
 
     return (
         <>
@@ -43,3 +43,5 @@ export default function HomePage() {
         </>
     );
 }
+
+export default HomePage;

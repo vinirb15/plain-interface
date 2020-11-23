@@ -3,7 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 
 import './styles.css'
 
-export default function Header() {
+const Header = () => {
   const [search, setSearch] = useState(false);
   const [actived, setActived] = useState('');
 
@@ -38,3 +38,5 @@ export default function Header() {
     (search ? onSearch : icon)
   )
 }
+
+export default Header;

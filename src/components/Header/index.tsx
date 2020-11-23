@@ -8,7 +8,7 @@ import SearchBox from '../SearchBox';
 import LoginButton from '../LoginButton';
 
 
-export default function Header() {
+const Header = () => {
 
     const history = useHistory();
 
@@ -40,3 +40,5 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header

@@ -9,7 +9,7 @@ const UserValidation: React.FC = () => {
 
     return (
         <>
-            <SideBar company="active" />
+            <SideBar validate="active" />
             <Header />
             <User />
         </>

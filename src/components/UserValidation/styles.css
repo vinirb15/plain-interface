@@ -1,4 +1,4 @@
-.requests-container{
+.requests-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -7,9 +7,16 @@
 
 .requests-container h2 {
     font-size: 2rem;
-    color: #7F43F5;
+    color: var(--bg-color);
     font-weight: 900;
     margin: 2rem 0;
+}
+
+.requests-container h2 b {
+    padding: .5rem .7rem;
+    background: var(--bg-color);
+    border-radius: 10px;
+    color: #fff;
 }
 
 .requests-container button {
@@ -25,8 +32,8 @@
     margin: 0.7rem 0;
 }
 
-.requests-container .content button {
-    height: 2.6rem;
+.requests-container .thiscontent button {
+    height: 2rem;
     width: 10%;
     border-radius: 20px;
     border: 0px;
@@ -38,22 +45,56 @@
     margin: 0.7rem 2rem;
 }
 
+.requests-container .thiscontent button:hover {
+    opacity: .5;
+}
 
-.content h3 {
+.requests-container .thiscontent h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.requests-container .thiscontent h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 4rem;
     width: 20%;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-radius: 10px;
     border: 0px;
-    background: #7F43F5;
+    background: var(--bg-color);
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.content ul {
+.requests-container .thiscontent ul {
     list-style: none;
 }
+
+.requests-container .thiscontent ul+h3 {
+    margin-top: 5rem;
+}
+
+@media(max-width: 1070px) {
+    .requests-container .thiscontent h3 {
+        height: 3rem;
+        width: 50%;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    .requests-container .thiscontent h1 {
+        font-size: 1.5rem;
+    }
+    .requests-container .thiscontent button {
+        height: 2.8rem;
+        width: 40%;
+        margin: 0.3rem 2rem;
+    }
+    .requests-container .thiscontent li+li {
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width: 700px) {}

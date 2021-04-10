@@ -1,0 +1,164 @@
+.notifications-button button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.notifications-button .image {
+    overflow: hidden;
+    -webkit-animation: ring 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+    1% {
+        transform: rotate(30deg);
+    }
+    3% {
+        transform: rotate(-28deg);
+    }
+    5% {
+        transform: rotate(34deg);
+    }
+    7% {
+        transform: rotate(-32deg);
+    }
+    9% {
+        transform: rotate(30deg);
+    }
+    11% {
+        transform: rotate(-28deg);
+    }
+    13% {
+        transform: rotate(26deg);
+    }
+    15% {
+        transform: rotate(-24deg);
+    }
+    17% {
+        transform: rotate(22deg);
+    }
+    19% {
+        transform: rotate(-20deg);
+    }
+    21% {
+        transform: rotate(18deg);
+    }
+    23% {
+        transform: rotate(-16deg);
+    }
+    25% {
+        transform: rotate(14deg);
+    }
+    27% {
+        transform: rotate(-12deg);
+    }
+    29% {
+        transform: rotate(10deg);
+    }
+    31% {
+        transform: rotate(-8deg);
+    }
+    33% {
+        transform: rotate(6deg);
+    }
+    35% {
+        transform: rotate(-4deg);
+    }
+    37% {
+        transform: rotate(2deg);
+    }
+    39% {
+        transform: rotate(-1deg);
+    }
+    41% {
+        transform: rotate(1deg);
+    }
+    43% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.notifications-button .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #0000001a;
+}
+
+.notifications-button .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    animation-name: animatetop;
+    animation-duration: .5s
+}
+
+.notifications-button .modal-header {
+    padding: 5px 20px 35px 0;
+    background-color: var(--bg-color);
+    color: white;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+
+.notifications-button .modal-content .modal-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.notifications-button .modal-content .modal-text h2 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: normal;
+    cursor: pointer
+}
+
+.notifications-button h1 {
+    position: absolute;
+    right: 225px;
+    top: 15px;
+    background: var(--bg-color);
+    font-size: .8rem;
+    padding: 2px 5px 2px 5px;
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+}
+
+@media (max-width: 500px) {
+    .notifications-button .modal-content {
+        width: 90%;
+    }
+    .notifications-button .modal-content .modal-text h2 {
+        font-size: 1.5rem;
+    }
+    .notifications-button h1 {
+        right: 25px;
+        background: #fff;
+        color: var(--bg-color);
+    }
+}

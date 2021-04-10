@@ -5,13 +5,13 @@
   margin: 0;
   padding: 0;
   width: 4%;
-  background-color: #7F43F5;
+  background-color: var(--bg-color);
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 
-.sidebar img {
+.sidebar #monograma {
   width: 80%;
   margin: 1rem;
 }
@@ -22,19 +22,40 @@
   padding: 1rem;
   margin-top: 0.5rem;
   text-decoration: none;
+  transition: .6s;
 }
 
 .sidebar a.active {
-  background-color: #ffffff;
-  color: #7F43F5;
+  background-color: var(--secundary-color);
+  color: var(--bg-color);
   border-radius: 8px;
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #ffffff;
+  background-color: var(--secundary-color);
   opacity: 0.9;
-  color: #7F43F5;
+  color: var(--bg-color);
   border-radius: 8px;
+}
+
+.sidebar button {
+  display: block;
+  background: transparent;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0!important;
+  text-decoration: none;
+  transition: .6s;
+  border: 0px;
+}
+
+.sidebar button:hover:not(.active) {
+  opacity: 0.3;
+  border-radius: 8px;
+}
+
+#config {
+  display: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -43,6 +64,7 @@
     height: auto;
     position: relative;
     flex-direction: row;
+    margin-bottom: 1rem;
   }
   .sidebar a {
     float: left;
@@ -50,14 +72,16 @@
   div.content {
     margin-left: 0;
   }
-  .sidebar img {
+  .sidebar #monograma {
     width: auto;
-    height: 4vh;
+    height: 10vh;
     margin: 0.5rem 2rem;
   }
-}
-
-@media screen and (max-width: 400px) {
+  #config {
+    display: block;
+    position: relative;
+    height: 5rem;
+  }
   .sidebar a {
     text-align: center;
     float: none;

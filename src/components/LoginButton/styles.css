@@ -5,7 +5,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #FFFFFF;
+  background-color: var(--secundary-color);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 25px;
@@ -16,9 +16,9 @@
 }
 
 .sidenav h1 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-left: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-top: 1rem;
   color: black;
   font-weight: 500;
@@ -29,6 +29,11 @@
   right: -30px;
   font-size: 36px;
   margin-right: 50px;
+}
+
+.closebtn{
+  color: var(--bg-color)!important;
+  cursor: pointer;
 }
 
 @media screen and (max-height: 450px) {

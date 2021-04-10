@@ -1,0 +1,75 @@
+.Analytics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f0f0f5;
+}
+
+.Analytics button {
+    padding: .8rem 2rem;
+    border: 2px solid #fff;
+    background-color: #f0f0f5;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.Analytics button:disabled {
+    background: #fff;
+    border: 0;
+    cursor: not-allowed;
+}
+
+#analytics-management {
+    padding: 0 0 1rem 0;
+    border-radius: 1rem;
+}
+
+#analytics-management .tables {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+#analytics-management .tables .list-header {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#analytics-management .tables .list-header .MuiFormLabel-root {
+    font-size: 1.2rem;
+}
+
+#analytics-management .tables td, #analytics-management .tables th{
+    width: 16%;
+}
+
+#analytics-management .tables td b{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: bold;
+    padding: 0;
+}
+
+#analytics-management .tables td select {
+    background: #ebdeee;
+    width: 8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem .7rem;
+    color: var(--bg-color);
+    border: 0px;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .Analytics button {
+        margin: 0;
+    }
+    #analytics-management .tables .list-header {
+        width: 50%;
+    }
+}

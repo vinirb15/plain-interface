@@ -14,8 +14,8 @@ header {
 
 header h2 {
     font-size: 2rem;
-    margin-left: 2.4rem;
-    color: #7F43F5;
+    /* margin-left: 2.4rem; */
+    color: var(--bg-color);
     font-weight: normal;
 }
 
@@ -23,12 +23,12 @@ header b {
     font-weight: bold;
 }
 
-.icons {
+header .icons {
     display: flex;
     justify-content: center;
 }
 
-.icons button {
+header .icons button {
     height: 27px;
     width: 25px;
     border-radius: 4px;
@@ -36,15 +36,40 @@ header b {
     background: transparent;
     margin-left: 16px;
     transition: border-color 0.2s;
+    cursor: pointer;
 }
 
-.icons button:hover {
+header .icons button:hover {
     border-color: #999;
 }
 
+header .upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .upper #impersonateButton {
+    border-radius: 4px;
+    border: 0px;
+    background: var(--bg-color);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-left: 2rem;
+    padding: .7rem;
+}
+
+header .upper #impersonateButton:hover {
+    color: var(--bg-color);
+    background: #fff;
+    border: 1px solid var(--bg-color);
+    cursor: pointer;
+}
 
 @media (max-width: 700px) {
     header {
-        margin-left: 0%;
+        display: none;
     }
 }

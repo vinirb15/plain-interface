@@ -15,3 +15,8 @@ body {
   background: #f0f0f5;
   -webkit-font-smoothig: antialiased;
 }
+
+:root {
+  --bg-color: #7F43F5;
+  --secundary-color: #ffffff;
+}
